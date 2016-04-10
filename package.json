@@ -1,0 +1,26 @@
+{
+  "name": "convert-data",
+  "version": "1.0.0",
+  "description": "convert anything to anything",
+  "main": "index.js",
+  "scripts": {
+    "test": "`npm bin`/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nshimiye/convert.git"
+  },
+  "keywords": [
+    "data",
+    "format",
+    "data",
+    "representation",
+    "conversion"
+  ],
+  "author": "Marcellin <nmarcellin2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nshimiye/convert/issues"
+  },
+  "homepage": "https://github.com/nshimiye/convert#readme"
+}
