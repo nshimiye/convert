@@ -11,16 +11,42 @@ curl https://www.google.com
 }
 ```
 * json to tree
- * supported input looks like
+ * supported input looks like 1
 ```
 {
   "team": {
     "name": "Clearview",
     "topic": "anything outside of work",
     "description": "This is a slack team",
+    "botuser": {
+      "name": "chatty the reporter",
+      "nickname": "@chatty"
+    }
   }
 }
 ```
+ * output looks like
+```
+{
+  "name": "team",
+  "parent": null,
+  "direct-children": {
+    "name": "Clearview",
+    "topic": "anything outside of work",
+    "description": "This is a slack team",
+  },
+  "children": [{
+    "name": "botuser",
+    "parent": "team",
+    "direct-children": {
+      "name": "chatty the reporter",
+      "nickname": "@chatty"
+    },
+    "children": []
+  }]
+}
+```
+ * supported input looks like 2
 ```
 {
   "team": {
